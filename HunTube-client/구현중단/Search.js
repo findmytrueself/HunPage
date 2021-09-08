@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import CoffeeButton from "./CoffeeButton";
-import Logo from "./Logo";
+import Logo from "../src/components/Logo";
 export const Container = styled.div`
   display: flex;
   /* justify-content: center; */
