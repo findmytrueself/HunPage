@@ -4,7 +4,7 @@
 # 사용 기술
 Reactjs, Styled-component, Expressjs
 
-## devlog
+## DevLog
 9월1일 전체적인구상
 9월2일 마이페이지
 9월3일 마이페이지
