@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 export const Container = Styled.div`
     display: flex;
     position:relative;
+    top:0.2em;
     left:2.5em;
 `;
 

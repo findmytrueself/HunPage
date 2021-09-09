@@ -30,7 +30,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/">
-            <HomePage />
+            <AboutMePage />
           </Route>
           <Route path="/about">
             <AboutMePage />
