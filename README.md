@@ -21,3 +21,4 @@ Reactjs, Styled-component, Expressjs
 
 9월8일 첫번째 커밋
 
+9월9일 로고 및 이름변경
