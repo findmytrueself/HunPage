@@ -19,8 +19,8 @@ export const MyPhoto = Styled.img`
     padding:0;
     width: 20vw;
     position: relative;
-    left:11em;
-    bottom:1em;
+    left:14em;
+    bottom:5em;
     height:80vh;
 `;
 
@@ -28,20 +28,21 @@ export const SnsIconWrapper = Styled.div`
   margin:0;
   padding:0;
   position: absolute;
-  top:30rem;
-  left :13.5rem;
+  top:27rem;
+  left :16.5rem;
   width: 15vw;
   height:10vh;
 `;
 
 export const SnsIconButtonWrapper = Styled.ul`
-  margin:0;
+/* border: solid #fff; */
+  margin:0.5em;
   padding:0;
   display: flex;
   align-items:center;
-  justify-content:space-around;
+  justify-content:space-evenly;
   position: relative;
-  bottom:3em;
+  bottom:4.5em;
 `;
 
 export const SnsIconButton = Styled.li`
@@ -70,7 +71,7 @@ export const Contact = Styled.p`
   align-items:center;
   height:5vh;
   position: relative;
-  bottom:2em;
+  bottom:4em;
 `;
 
 export const ContentTitle = Styled.p`
@@ -79,7 +80,6 @@ export const ContentTitle = Styled.p`
     bottom:0.8em;
     left:9em;
     width:60vw;
-    
 `;
 
 export const Content = Styled.p`
@@ -274,9 +274,16 @@ const AboutMePage = () => {
                 <SnsIconContent src="images/linkedin.png"></SnsIconContent>
               </a>
             </SnsIconButton>
+          </SnsIconButtonWrapper>
+          <SnsIconButtonWrapper>
             <SnsIconButton>
               <a href="https://www.instagram.com/instant.coffee_/?hl=ko">
                 <SnsIconContent src="images/instagram.png" />
+              </a>
+            </SnsIconButton>
+            <SnsIconButton>
+              <a href="https://www.youtube.com/channel/UCFCddKu8YvVdLIB-bYilGPg/videos">
+                <SnsIconContent src="images/youtube.png" />
               </a>
             </SnsIconButton>
           </SnsIconButtonWrapper>
@@ -299,8 +306,7 @@ const AboutMePage = () => {
             커뮤니케이션과 협업을 통해 개개인의 능력을 극대화 시킬 수 있습니다.
           </Content>
           <Content data-aos="fade-up">
-            열정 넘치는 사람들과 함께 성장해 나가서 앞으로 행복하게
-            살고싶습니다.
+            열정 넘치는 사람들과 함께 성장해 나가겠습니다.
           </Content>
           <Content data-aos="fade-up">
             평소 근력운동과 수영을 통해 건강관리를 하고 있습니다.
