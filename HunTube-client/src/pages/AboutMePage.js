@@ -76,6 +76,7 @@ export const Contact = Styled.p`
 export const ContentTitle = Styled.p`
     position: relative;
     font-size:2em;
+    bottom:0.8em;
     left:9em;
     width:60vw;
     
@@ -85,6 +86,7 @@ export const Content = Styled.p`
 
     position: relative;
     font-size:1.2em;
+    bottom:2em;
     left:14em;
     width:60vw;
 `;
@@ -263,6 +265,11 @@ const AboutMePage = () => {
               </a>
             </SnsIconButton>
             <SnsIconButton>
+              <a href="https://tender-river-902.notion.site/TIL-b0cb4073403f43cb9cae81f3da7923e7">
+                <SnsIconContent src="images/notion.png" />
+              </a>
+            </SnsIconButton>
+            <SnsIconButton>
               <a href="https://www.linkedin.com/in/hun-im-01644a207/">
                 <SnsIconContent src="images/linkedin.png"></SnsIconContent>
               </a>
@@ -296,10 +303,13 @@ const AboutMePage = () => {
             살고싶습니다.
           </Content>
           <Content data-aos="fade-up">
-            평소 근력운동과 기초체력 훈련을 병행하여 건강관리를 하고 있습니다.
+            평소 근력운동과 수영을 통해 건강관리를 하고 있습니다.
           </Content>
           <Content data-aos="fade-up">
-            좋아하는건 피아노치기, 스쿠버다이빙, 홍차마시기 입니다.
+            취미는 피아노치기, 스쿠버다이빙, 홍차마시기 입니다.
+          </Content>
+          <Content data-aos="fade-up">
+            왼쪽의 깃허브와 노션페이지에 매일 공부한 내용을 기록합니다.
           </Content>
         </TitleColumn>
       </ContentContainer>

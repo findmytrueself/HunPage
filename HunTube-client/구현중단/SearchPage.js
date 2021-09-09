@@ -53,7 +53,7 @@ export default SearchPage;
 //     setIsLoading(true);
 //     if (searchButtonClickBool && mounted) {
 //       const { data } = await axios.get(
-//         `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${searchText}&key=AIzaSyC72B5xSjpcLOkNIcFyQGsOWYXN2ec0Oxg`
+//         `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${searchText}&key=${this.key}`
 //       );
 //       console.log(data);
 //       setApiData(data.items);
