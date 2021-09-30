@@ -54,8 +54,6 @@ const ContactFormSpan = Styled.span`
     pointer-events : none;
     transition:0.5s;
     color:#fff;
-
-    
 `;
 const ContactPage = () => {
   return (
@@ -65,16 +63,16 @@ const ContactPage = () => {
         <ContactForm>
           <ContactFormTitle>Send Message</ContactFormTitle>
           <ContactFormInputBox>
+            <ContactFormSpan>Name</ContactFormSpan>
             <ContactFormInput type="text" name="" required="required" />
-            <ContactFormSpan>Full Name</ContactFormSpan>
           </ContactFormInputBox>
           <ContactFormInputBox>
-            <ContactFormInput type="text" name="" required="required" />
             <ContactFormSpan>Email</ContactFormSpan>
+            <ContactFormInput type="text" name="" required="required" />
           </ContactFormInputBox>
           <ContactFormInputBox>
-            <ContactFormTextarea required="required"></ContactFormTextarea>
             <ContactFormSpan>Type your Message...</ContactFormSpan>
+            <ContactFormTextarea required="required"></ContactFormTextarea>
           </ContactFormInputBox>
           <div className="inputBox">
             <input type="submit" name="" value="Send" />
