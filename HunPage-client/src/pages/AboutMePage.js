@@ -6,6 +6,10 @@ import "aos/dist/aos.css";
 
 export const ContentContainer = Styled.div`
   display: flex;
+  position: relative;
+  bottom:5em;
+  left:16em;
+  /* border:solid #fff; */
 `;
 
 export const TitleColumn = Styled.div`
@@ -19,8 +23,8 @@ export const MyPhoto = Styled.img`
     padding:0;
     width: 20vw;
     position: relative;
-    left:14em;
-    bottom:10em;
+    right:0.5em;
+    bottom:5em;
     height:80vh;
 `;
 
@@ -28,8 +32,8 @@ export const SnsIconWrapper = Styled.div`
   margin:0;
   padding:0;
   position: absolute;
-  top:27rem;
-  left :16.5rem;
+  top:24rem;
+  left :2rem;
   width: 15vw;
   height:10vh;
 `;
@@ -62,6 +66,10 @@ export const SnsIconContent = Styled.img`
   color: #fff;
   font-size:30px !important;
 `;
+export const Email = Styled.a`
+  text-decoration:none;
+  color:white;
+`;
 
 export const Contact = Styled.p`
   margin: 0;
@@ -78,7 +86,7 @@ export const ContentTitle = Styled.p`
     position: relative;
     font-size:2em;
     bottom:0.8em;
-    left:9em;
+    left:2em;
     width:60vw;
 `;
 
@@ -87,7 +95,7 @@ export const Content = Styled.p`
     position: relative;
     font-size:1.2em;
     bottom:2em;
-    left:14em;
+    left:2em;
     width:60vw;
 `;
 
@@ -111,6 +119,8 @@ export const SkillContent = Styled.p`
 export const BlankContent = Styled.p`
   display: flex;
   justify-content:center;
+  position: relative;
+  bottom:5em;
 `;
 
 export const BlankImg = Styled.a`
@@ -288,7 +298,9 @@ const AboutMePage = () => {
             </SnsIconButton>
           </SnsIconButtonWrapper>
           <Contact>010-8077-8054</Contact>
-          <Contact>load1999@gmail.com</Contact>
+          <Contact>
+            <Email href="mailto:load1999@gmail.com?">load1999@gmail.com</Email>
+          </Contact>
         </SnsIconWrapper>
         <TitleColumn>
           <ContentTitle data-aos="fade-right">

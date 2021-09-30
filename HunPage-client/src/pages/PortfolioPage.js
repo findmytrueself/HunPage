@@ -8,11 +8,12 @@ export const PortfolioWrapper = Styled.div`
 
 export const PortfolioDescript = Styled.div`
   position: relative;
-  bottom: 9em;
-  left:4em;
+  bottom: 12em;
+  left : 4em;
   margin:8em;
-  width:40%;
+  width:20%;
   height:70vh;
+  /* border:solid #fff; */
 `;
 
 export const PortfolioDescriptTitle = Styled.p`
@@ -56,7 +57,8 @@ export const PortfolioContent = Styled.div`
     flex-direction:column;
     float: right;
     position: relative;
-    right: 1em;
+    bottom:4em;
+    left:2em;
     /* justify-content:center; */
     /* align-items:center; */
 `;
