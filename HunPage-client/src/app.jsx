@@ -3,8 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Styled from "styled-components";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-import HomePage from "./pages/HomePage";
+// import HomePage from "./pages/HomePage";
 import AboutMePage from "./pages/AboutMePage";
 import PortfolioPage from "./pages/PortfolioPage";
 import ContactPage from "./pages/ContactPage";

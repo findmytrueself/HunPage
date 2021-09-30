@@ -37,7 +37,7 @@ const Logo = () => {
     <Container>
       <LogoContainer>
         <Link to="/">
-          <LogoImg src="../images/logomarvel.png" alt="logo"></LogoImg>
+          <LogoImg src="../images/logo.png" alt="logo"></LogoImg>
         </Link>
       </LogoContainer>
     </Container>

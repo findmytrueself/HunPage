@@ -108,7 +108,7 @@ const PortfolioPage = () => {
           </SkillsBoxUl>
         </PortfolioDescript>
         <PortfolioContent>
-          <PortfolioImg src="images/huntube.png"></PortfolioImg>
+          <PortfolioImg src="images/webpage.png"></PortfolioImg>
           <PortfolioTitle>개인 포트폴리오 웹사이트 제작</PortfolioTitle>
         </PortfolioContent>
       </PortfolioWrapper>

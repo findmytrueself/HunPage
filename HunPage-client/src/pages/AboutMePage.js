@@ -20,7 +20,7 @@ export const MyPhoto = Styled.img`
     width: 20vw;
     position: relative;
     left:14em;
-    bottom:5em;
+    bottom:10em;
     height:80vh;
 `;
 
@@ -328,7 +328,7 @@ const AboutMePage = () => {
       <SkillContainer data-aos="fade-down">
         <SkillTitle>프론트엔드 기술</SkillTitle>
         <SkillContent>
-          <SkillImg src="images/JS.jpeg"></SkillImg>
+          <SkillImg src="images/JS.png"></SkillImg>
         </SkillContent>
         <SkillContent>
           <SkillImg src="images/react.png"></SkillImg>
