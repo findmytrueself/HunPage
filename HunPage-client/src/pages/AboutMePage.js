@@ -6,47 +6,35 @@ import "aos/dist/aos.css";
 
 export const ContentContainer = Styled.div`
   display: flex;
+  justify-content:center;
+  align-items:center;
   position: relative;
-  bottom:5em;
-  left:16em;
-  /* border:solid #fff; */
+  bottom: 5em;
+  left: 12em;
+  width: 80vw;
 `;
 
-export const TitleColumn = Styled.div`
-    display: flex;
-    flex-direction:column;
+export const PhotoSnsWrapper = Styled.div`
+  display:flex;
+  flex-direction:column;
 `;
 
-export const MyPhoto = Styled.img`
-  /* border:solid #FFF; */
-    margin:0;
-    padding:0;
-    width: 20vw;
-    position: relative;
-    right:0.5em;
-    bottom:5em;
-    height:80vh;
-`;
-
-export const SnsIconWrapper = Styled.div`
+export const PhotoWrapper = Styled.div`
   margin:0;
   padding:0;
-  position: absolute;
-  top:24rem;
-  left :2rem;
-  width: 15vw;
-  height:10vh;
+`;
+export const MyPhoto = Styled.img`
+    margin:0;
+    padding:0;
+    width: 30vh;
 `;
 
 export const SnsIconButtonWrapper = Styled.ul`
-/* border: solid #fff; */
-  margin:0.5em;
+  margin:0;
   padding:0;
   display: flex;
   align-items:center;
   justify-content:space-evenly;
-  position: relative;
-  bottom:4.5em;
 `;
 
 export const SnsIconButton = Styled.li`
@@ -71,31 +59,31 @@ export const Email = Styled.a`
   color:white;
 `;
 
-export const Contact = Styled.p`
-  margin: 0;
+export const ContactWrapper = Styled.div`
+  margin:1em;
+`;
+export const Contact = Styled.div`
+  margin: 0.3em;
   padding: 0;
   display: flex;
   justify-content:center;
   align-items:center;
-  height:5vh;
-  position: relative;
-  bottom:4em;
+`;
+
+export const ContentWrapper = Styled.div`
+    display: flex;
+    flex-direction:column;
+    position: relative;
+    left: 3em;
 `;
 
 export const ContentTitle = Styled.p`
-    position: relative;
     font-size:2em;
-    bottom:0.8em;
-    left:2em;
     width:60vw;
 `;
 
 export const Content = Styled.p`
-
-    position: relative;
     font-size:1.2em;
-    bottom:2em;
-    left:2em;
     width:60vw;
 `;
 
@@ -171,17 +159,18 @@ export const SlideImg = Styled.img`
 `;
 
 export const SlideButtonWrapper = Styled.div`
-  position: relative;
-  bottom:4em;
+  /* position: relative; */
+  /* bottom:4em; */
   display: flex;
   justify-content: space-between;
 `;
 export const SlideButton = Styled.button`
-  font-size:50px;
-  width:100px;
-  height:80px;
-  border-radius : 5px;
+  font-size:3em;
+  width:2em;
+  height:1.5em;
+  border-radius : 0.1em;
   padding: 0;
+  margin:0;
   border: none;
   cursor: pointer;
   &:hover{
@@ -191,8 +180,11 @@ export const SlideButton = Styled.button`
 `;
 export const SlideDescription = Styled.p`
     font-size: 2em;
+    display: flex;
+    align-items:center;
+    justify-content:center;
     position: relative;
-    bottom : 1em;
+    bottom:1em;
 `;
 
 export const CertificateContainer = Styled.div`
@@ -266,43 +258,50 @@ const AboutMePage = () => {
     <>
       <Logo />
       <ContentContainer>
-        <MyPhoto data-aos="zoom-in-left" src="images/hunProfile.PNG" />
-        <SnsIconWrapper data-aos="zoom-in-left">
-          <SnsIconButtonWrapper>
-            <SnsIconButton>
-              <a href="https://github.com/findmytrueself">
-                <SnsIconContent src="images/github.png" />
-              </a>
-            </SnsIconButton>
-            <SnsIconButton>
-              <a href="https://tender-river-902.notion.site/TIL-b0cb4073403f43cb9cae81f3da7923e7">
-                <SnsIconContent src="images/notion.png" />
-              </a>
-            </SnsIconButton>
-            <SnsIconButton>
-              <a href="https://www.linkedin.com/in/hun-im-01644a207/">
-                <SnsIconContent src="images/linkedin.png"></SnsIconContent>
-              </a>
-            </SnsIconButton>
-          </SnsIconButtonWrapper>
-          <SnsIconButtonWrapper>
-            <SnsIconButton>
-              <a href="https://www.instagram.com/instant.coffee_/?hl=ko">
-                <SnsIconContent src="images/instagram.png" />
-              </a>
-            </SnsIconButton>
-            <SnsIconButton>
-              <a href="https://www.youtube.com/channel/UCFCddKu8YvVdLIB-bYilGPg/videos">
-                <SnsIconContent src="images/youtube.png" />
-              </a>
-            </SnsIconButton>
-          </SnsIconButtonWrapper>
-          <Contact>010-8077-8054</Contact>
-          <Contact>
-            <Email href="mailto:load1999@gmail.com?">load1999@gmail.com</Email>
-          </Contact>
-        </SnsIconWrapper>
-        <TitleColumn>
+        <PhotoSnsWrapper>
+          <PhotoWrapper>
+            <MyPhoto data-aos="zoom-in-left" src="images/hunProfile.PNG" />
+            <SnsIconButtonWrapper data-aos="zoom-in-left">
+              <SnsIconButton>
+                <a href="https://github.com/findmytrueself">
+                  <SnsIconContent src="images/github.png" />
+                </a>
+              </SnsIconButton>
+              <SnsIconButton>
+                <a href="https://tender-river-902.notion.site/TIL-b0cb4073403f43cb9cae81f3da7923e7">
+                  <SnsIconContent src="images/notion.png" />
+                </a>
+              </SnsIconButton>
+              <SnsIconButton>
+                <a href="https://www.linkedin.com/in/hun-im-01644a207/">
+                  <SnsIconContent src="images/linkedin.png"></SnsIconContent>
+                </a>
+              </SnsIconButton>
+            </SnsIconButtonWrapper>
+            <br />
+            <SnsIconButtonWrapper data-aos="zoom-in-left">
+              <SnsIconButton>
+                <a href="https://www.instagram.com/instant.coffee_/?hl=ko">
+                  <SnsIconContent src="images/instagram.png" />
+                </a>
+              </SnsIconButton>
+              <SnsIconButton>
+                <a href="https://www.youtube.com/channel/UCFCddKu8YvVdLIB-bYilGPg/videos">
+                  <SnsIconContent src="images/youtube.png" />
+                </a>
+              </SnsIconButton>
+            </SnsIconButtonWrapper>
+          </PhotoWrapper>
+          <ContactWrapper data-aos="zoom-in-left">
+            <Contact>010-8077-8054</Contact>
+            <Contact>
+              <Email href="mailto:load1999@gmail.com?">
+                load1999@gmail.com
+              </Email>
+            </Contact>
+          </ContactWrapper>
+        </PhotoSnsWrapper>
+        <ContentWrapper>
           <ContentTitle data-aos="fade-right">
             중국어하는 프론트엔드 개발자 임훈입니다.
           </ContentTitle>
@@ -329,7 +328,7 @@ const AboutMePage = () => {
           <Content data-aos="fade-up">
             왼쪽의 깃허브와 노션페이지에 매일 공부한 내용을 기록합니다.
           </Content>
-        </TitleColumn>
+        </ContentWrapper>
       </ContentContainer>
       <BlankContent>
         <BlankImg scroll={scroll}></BlankImg>
