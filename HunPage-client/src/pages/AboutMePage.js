@@ -165,6 +165,9 @@ export const SlideButtonWrapper = Styled.div`
   justify-content: space-between;
 `;
 export const SlideButton = Styled.button`
+  display: flex;
+  align-items:center;
+  justify-content:center;
   font-size:3em;
   width:2em;
   height:1.5em;
@@ -179,7 +182,7 @@ export const SlideButton = Styled.button`
   }
 `;
 export const SlideDescription = Styled.p`
-    font-size: 2em;
+    font-size: 2.5em;
     display: flex;
     align-items:center;
     justify-content:center;
