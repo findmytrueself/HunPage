@@ -107,8 +107,9 @@ export const SkillContent = Styled.p`
 export const BlankContent = Styled.p`
   display: flex;
   justify-content:center;
-  position: relative;
-  bottom:5em;
+  position: fixed;
+  bottom:2em;
+  width:100%;
 `;
 
 export const BlankImg = Styled.a`
